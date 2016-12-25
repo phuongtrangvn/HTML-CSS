@@ -6,7 +6,8 @@ body {
   background-attachment: fixed;
   background-size: 350px;
   text-align: center;
-  padding: 20px 450px 20px 450px;
+  width: 700px;
+  margin: 20px auto;
 }
 
 h3 { color: red; }
@@ -16,6 +17,7 @@ h4 { color: gray; font-style: italic;}
 .menu {
   background-color: #D5B0AC;
   text-align: center;
+  font-size: 0;
 }
 
 .menu span {
@@ -29,9 +31,15 @@ h4 { color: gray; font-style: italic;}
   padding-top: 3px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
 span:hover {
   background-color: #9CD08F;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .menu.menu_vertical {
@@ -41,6 +49,50 @@ span:hover {
 .menu.menu_vertical span{
   display: block;
   border: 2px solid white;
+}
+
+.menu_vertical_in{
+  display: none;
+  position: absolute;
+}
+
+.menu_vertical_in span {
+  display: block;
+  margin-top: 1px;
+}
+
+.dropdown:hover .menu_vertical_in{
+  display: block;
+}
+
+.menu_vertical_in_deep{
+  display: none;
+  position: absolute;
+  left: 100%;
+}
+
+.menu_vertical_in_deep span {
+  display: block;
+  margin-top: 1px;
+}
+
+.dropdown_deep:hover .menu_vertical_in_deep{
+  display: block;
+}
+
+.menu_vertical_in_deeper{
+  display: none;
+  position: absolute;
+  left: 100%;
+}
+
+.menu_vertical_in_deeper span {
+  display: block;
+  margin-top: 1px;
+}
+
+.dropdown_deeper:hover .menu_vertical_in_deeper{
+  display: block;
 }
 
 .temp {

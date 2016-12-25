@@ -9,7 +9,31 @@
     <h3>A horizontal menu : </h3>
     <nav class="menu">
       <span>Item 1</span>
-      <span>Item 2</span>
+      <span class="dropdown">
+        Item 2
+        <nav class="menu menu_vertical_in">
+          <span class="dropdown_deep">
+            Item 2.1
+            <nav class="menu menu_vertical_in_deep">
+              <span class="dropdown_deeper">
+                Item 2.1.1
+                <nav class="menu menu_vertical_in_deeper">
+                  <span>Item</span>
+                  <span>Item</span>
+                  <span>Item</span>
+                  <span>Item</span>
+                </nav>
+              </span>
+              <span>Item 2.2.1</span>
+              <span>Item 2.3.1</span>
+              <span>Item 2.4.1</span>
+            </nav>
+          </span>
+          <span>Item 2.2</span>
+          <span>Item 2.3</span>
+          <span>Item 2.4</span>
+        </nav>
+      </span>
       <span>Item 3</span>
       <span>Item 4</span>
     </nav>
