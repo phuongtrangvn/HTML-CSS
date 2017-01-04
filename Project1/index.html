@@ -8,7 +8,13 @@
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
     <script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="libs/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="libs/Handlebars.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
   </head>
   <body>
     <!--header -->
@@ -36,161 +42,54 @@
     <!--end header -->
 
     <!--content -->
-    <section class="hot_girls">
-        <div class="container">
-            <div class="row">
+    <section class="container">
+        <div class="row" id="item-list">
 
-                <form class="col-sm-3 hotgirl_cards">
-                    <div class="card left">
-                        <div class="cover">
-                            <img class="img_cover" src="img/img14.png" alt="Death Prophet"/>
-                            <div class="div_overlay">
-                            </div>
-                            <div class="overlay top">
-                                <button><span class="glyphicon glyphicon-plus"></span></button>
-                            </div>
+        </div>
 
-                            <div class="overlay bottom_left">
-                                <span class="glyphicon glyphicon-eye-open"></span>
-                                <span class="text_hover">12876</span>
-                            </div>
-
-                            <div class="overlay bottom_center">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                                <span class="text_hover">21/11/2016</span>
-                            </div>
-
-                            <div class="overlay bottom_right">
-                                <span class="glyphicon glyphicon-plus"></span>
-                                <span class="text_hover">996</span>
-                            </div>
-                        </div>
-
-                        <div class="info">
-                            <img class="avatar" src="img/img14.png" alt="Death Prophet"/>
-                            <a class="title_card">Death Prophet</a>
-                            <span class="sub_title">Lorem ipsum</span>
-                        </div>
-                        <div class="desc">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        </div>
-                    </div>
-                </form>
-
-                <form class="col-sm-3 hotgirl_cards">
-                    <div class="card middle1">
-                        <div class="cover">
-                            <img class="img_cover" src="img/img2.png" alt="Death Prophet"/>
-                            <div class="div_overlay">
-                            </div>
-                            <div class="overlay top">
-                                <button><span class="glyphicon glyphicon-plus"></span></button>
-                            </div>
-
-                            <div class="overlay bottom_left">
-                                <span class="glyphicon glyphicon-eye-open"></span>
-                                <span class="text_hover">12876</span>
-                            </div>
-
-                            <div class="overlay bottom_center">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                                <span class="text_hover">21/11/2016</span>
-                            </div>
-
-                            <div class="overlay bottom_right">
-                                <span class="glyphicon glyphicon-plus"></span>
-                                <span class="text_hover">996</span>
-                            </div>
-                        </div>
-
-                        <div class="info">
-                            <img class="avatar" src="img/img14.png" alt="Death Prophet"/>
-                            <a class="title_card">Death Prophet</a>
-                            <span class="sub_title">Lorem ipsum</span>
-                        </div>
-                        <div class="desc">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        </div>
-                    </div>
-                </form>
-
-                <form class="col-sm-3 hotgirl_cards">
-                    <div class="card middle2">
-                        <div class="cover">
-                            <img class="img_cover" src="img/img3.png" alt="Death Prophet"/>
-                            <div class="div_overlay">
-                            </div>
-                            <div class="overlay top">
-                                <button><span class="glyphicon glyphicon-plus"></span></button>
-                            </div>
-
-                            <div class="overlay bottom_left">
-                                <span class="glyphicon glyphicon-eye-open"></span>
-                                <span class="text_hover">12876</span>
-                            </div>
-
-                            <div class="overlay bottom_center">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                                <span class="text_hover">21/11/2016</span>
-                            </div>
-
-                            <div class="overlay bottom_right">
-                                <span class="glyphicon glyphicon-plus"></span>
-                                <span class="text_hover">996</span>
-                            </div>
-                        </div>
-
-                        <div class="info">
-                            <img class="avatar" src="img/img14.png" alt="Death Prophet"/>
-                            <a class="title_card">Death Prophet</a>
-                            <span class="sub_title">Lorem ipsum</span>
-                        </div>
-                        <div class="desc">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        </div>
-                    </div>
-                </form>
-
-                <form class="col-sm-3 hotgirl_cards">
-                    <div class="card right">
-                        <div class="cover">
-                            <img class="img_cover" src="img/img14.png" alt="Death Prophet"/>
-                            <div class="div_overlay">
-                            </div>
-                            <div class="overlay top">
-                                <button><span class="glyphicon glyphicon-plus"></span></button>
-                            </div>
-
-                            <div class="overlay bottom_left">
-                                <span class="glyphicon glyphicon-eye-open"></span>
-                                <span class="text_hover">12876</span>
-                            </div>
-
-                            <div class="overlay bottom_center">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                                <span class="text_hover">21/11/2016</span>
-                            </div>
-
-                            <div class="overlay bottom_right">
-                                <span class="glyphicon glyphicon-plus"></span>
-                                <span class="text_hover">996</span>
-                            </div>
-                        </div>
-
-                        <div class="info">
-                            <img class="avatar" src="img/img14.png" alt="Death Prophet"/>
-                            <a class="title_card">Death Prophet</a>
-                            <span class="sub_title">Lorem ipsum</span>
-                        </div>
-                        <div class="desc">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </form>
-    </section>
+      </section>
     <!--end content -->
+    <script id="entry-template" type="text/x-handlebars-template">
+      {{#each items}}
+    <div class="col-md-3 col-sm-6 item_container">
+      <div class="item">
+        <div class="image_container">
+          <img src={{imageUrl}}>
+          <div class="overlay">
+            <button type="button" class="plus_button">
+              <span class="glyphicon glyphicon-plus"></span>
+            </button>
+            <div class="img_statistics_container">
+              <div class="row text-center">
+                <div class="col-xs-4">
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  <p>{{view}}</p>
+                </div>
+                <div class="col-xs-4">
+                  <span class="glyphicon glyphicon-time"></span>
+                  <p>{{date}}</p>
+                </div>
+                <div class="col-xs-4">
+                  <span class="glyphicon glyphicon-plus"></span>
+                  <p>{{plus}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info_container">
+          <div class="author_info">
+            <img src={{posterAvatar}} class="author_avatar">
+            <h3>{{posterName}}</h3>
+            <p class="text-muted">{{posterTitle}}</p>
+          </div>
+          <p>
+            {{content}}
+          </p>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </script>
   </body>
 </html>
