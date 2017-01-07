@@ -126,3 +126,19 @@ body{
   right: 0;
   color: #ffffff;
 }
+
+.info-text {
+  margin-top: 10px;
+  margin-right: 20px;
+  float: right;
+  color: gray;
+}
+
+.img-modal {
+  margin: 20px;
+}
+
+.modal-content {
+  width: 300px;
+  left: 150px;
+}
